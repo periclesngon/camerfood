@@ -71,7 +71,7 @@ class MealItem extends StatelessWidget {
             Stack(
               children: <Widget>[
                 ClipRRect(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(15),
                     topRight: Radius.circular(15),
                   ),
@@ -113,8 +113,8 @@ class MealItem extends StatelessWidget {
                     Text('$duration min')
                   ],),
                    Row(children: <Widget>[
-                Icon(Icons.work,),
-                SizedBox(width: 6,),
+                const Icon(Icons.work,),
+                const SizedBox(width: 6,),
                 Text(complexityText)
               ],),
                Row(children: <Widget>[
