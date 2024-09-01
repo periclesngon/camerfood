@@ -5,6 +5,7 @@ import 'package:delimeal_project/screens/category_meal_screen.dart';
 import 'package:delimeal_project/screens/filter_screen.dart';
 import 'package:delimeal_project/screens/login_page.dart';
 import 'package:delimeal_project/screens/meal_detail_sceen.dart';
+import 'package:delimeal_project/screens/signup_page.dart';
 import 'package:delimeal_project/screens/tab_sceen.dart';
 import 'package:flutter/material.dart';
 
@@ -94,6 +95,7 @@ bool _isMealFavorite(String id){
         CategoryMealsScreen.routeName: (ctx)=> CategoryMealsScreen(_avalableMeals),
         mealDetailSceen.routeName:(ctx)=>mealDetailSceen(_toggleFavorite,_isMealFavorite),
         FilterScreen.routeName:(ctx)=>FilterScreen(_filters,_setFilters),
+        SignUpPage.routeName:(ctx)=>const SignUpPage(),
 
       },
       // onGenerateRoute: (settings) {

@@ -1,5 +1,6 @@
 import 'package:delimeal_project/models/meal.dart';
 import 'package:delimeal_project/screens/categories_screen.dart';
+import 'package:delimeal_project/screens/signup_page.dart';
 import 'package:delimeal_project/screens/tab_sceen.dart';
 import 'package:flutter/material.dart';
 
@@ -89,7 +90,10 @@ List<Meal> _favoriteMeals=[];
 
   void _signUp() {
   // Navigate to the sign-up page
-  Navigator.pushNamed(context, '/signup');
+ Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const SignUpPage(),
+    ));
 }
 
   
@@ -281,7 +285,7 @@ List<Meal> _favoriteMeals=[];
                     GestureDetector(
                       onTap: _signUp,
                       child: const Text(
-                        "Create accont",
+                        "Create account",
                         style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
